@@ -1,7 +1,7 @@
 {
   "name": "@alepop/lisk-musig",
-  "version": "0.1.0",
-  "description":"Lisk muSig",
+  "version": "0.1.1",
+  "description": "Lisk muSig",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
