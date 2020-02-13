@@ -1,7 +1,7 @@
 {
   "name": "@alepop/lisk-musig",
   "version": "0.1.1",
-  "description": "Lisk muSig",
+  "description": "Three round m-of-m key aggregation for Lisk using the MuSig signature scheme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
