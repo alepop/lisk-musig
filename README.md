@@ -18,14 +18,14 @@ const keys2 = musig.generateKeyPairFromPassphrase(/* mnemonica */);
 
 const config = new musig.Config([keys1.publicKey, keys2.publicKey]);
 
-const aggregatePubkicKey = config.publicKey;
+const aggregatePublicKey = config.publicKey;
 
 const tx = new TransferTransaction({
   recipientId: "18160565574430594874L",
   amount: "1000",
   networkIdentifier:
     "e48feb88db5b5cf5ad71d93cdcd1d879b6d5ed187a36b0002cc34e0ef9883255",
-  senderPublicKey: aggregatePubkicKey
+  senderPublicKey: aggregatePublicKey
 });
 
 const session1 = new musig.Session(config, keys1, tx);
@@ -54,7 +54,7 @@ const signature = session1.aggregateSignature;
 const isValid = verifyData(
   tx.getBytes(),
   bufferToHex(signature),
-  aggregatePubkicKey
+  aggregatePublicKey
 );
 ```
 
