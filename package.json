@@ -1,0 +1,58 @@
+{
+  "name": "@alepop/lisk-musig",
+  "version": "0.1.0",
+  "description":"Lisk muSig",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/spec/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "globals": {
+      "window": {},
+      "ts-jest": {
+        "tsConfig": "./tsconfig.json"
+      }
+    }
+  },
+  "keywords": [
+    "ed25519",
+    "muSig",
+    "lisk",
+    "crypto"
+  ],
+  "author": "Aleksey Popov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alepop/lisk-musig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alepop/lisk-musig.git/issues"
+  },
+  "homepage": "https://github.com/alepop/lisk-musig.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@futuretense/ed25519-musig": "^0.0.5",
+    "@liskhq/lisk-cryptography": "^2.4.2",
+    "@liskhq/lisk-transactions": "^3.0.2"
+  }
+}
